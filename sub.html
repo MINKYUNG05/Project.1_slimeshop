@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css/common.css">
+    <link rel="stylesheet" href="1.css/sub.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.product1').click(function () {
+                $("#pro").fadeIn();
+                $("#review").hide();
+                $("#refund").hide();
+                $("#deliver").hide();
+
+            });
+
+
+            $('.buy').click(function () {
+                $("#review").fadeIn();
+                $("#pro").hide();
+                $("#refund").hide();
+                $("#deliver").hide();
+
+            });
+
+            $('.refund').click(function () {
+                $("#pro").hide();
+                $("#review").hide();
+                $("#refund").fadeIn();
+                $("#deliver").hide();
+
+            });
+
+            $('.delivery').click(function () {
+                $("#pro").hide();
+                $("#review").hide();
+                $("#refund").hide();
+                $("#deliver").fadeIn();
+
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <body style="overflow-x: hidden">
+        <div id="box0">
+            <div id="colorbar"></div>
+            <div id="logo"><img src="img/슬라임로고.png" alt="slime"></div>
+
+            <div id="login">
+                <ul>
+                    <li><a href="#"><img src="img/아이콘_돋보기.png" alt="glass"></a></li>
+                    <li><a href="#"><img src="img/아이콘_유저.png" alt="user"></a></li>
+                    <li><a href="#"><img src="img/아이콘_가방.png" alt="bag"></a></li>
+                </ul>
+
+                <div id="register">
+                    <a href="#"> Sign in </a>/
+                    <a href="#">Register </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="menu">
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Guide</a></li>
+            </ul>
+        </div>
+
+        <!-- main -->
+
+        <div id="product">
+            <ul>
+                <li><img src="img/슬라임서브.webp" alt="slime"></li>
+                <li>
+                    <h1>프루티 루프</h1><br>
+                    <p><img src="img/별점.PNG" alt="star"> 234 REVIEWS </p><br>
+                    <p><s>₩20,300</s> <strong> ₩18,000</strong></p>
+                    <hr>
+                    <h3>SIZE</h3>
+                    <button> 8oz</button>
+                    <button>6oz</button><br>
+                    <button> ADD TO CART </button>
+
+                    <button> Buy with <img src="img/구글페이.png" alt="pay"></button>
+                    <button> Buy with <img src="img/카카오페이.png" alt="pay"></button>
+                    <button> Buy with <img src="img/네이버페이.webp" alt="pay"></button>
+
+                </li>
+            </ul>
+        </div>
+
+        <div id="nav">
+            <ul>
+                <li class="product1"><a href="#">제품정보</a></li>
+                <li class="buy"><a href="#">구매후기</a></li>
+                <li class="refund"><a href="#">환불정책</a></li>
+                <li class="delivery"><a href="#">배송안내</a></li>
+            </ul>
+
+        </div>
+        <div id="pro">
+            <img src="img/슬라임설명.png" alt="explain">
+            <video src="video/슬라임소개.mp4" alt="video" loop auto controls></video>
+        </div>
+
+
+
+
+
+        <div id="review">
+            <!--        <div id="imgreview">
+                <h2> 사진과 함께 감상해보세요.</h2>
+                <ul>
+                     <li><img src="img/next.png" alt="arrow" id="next1"></li>
+                    <li><img src="img/후기1.png" alt="slime" id="pic"></li>
+                    <li><img src="img/후기2.png" alt="slime" id="pic"></li>
+                    <li><img src="img/후기3.png" alt="slime" id="pic"></li>
+                    <li><img src="img/후기4.png" alt="slime" id="pic"></li>
+                    <li><img src="img/next.png" alt="arrow" id="next2"></li>
+                    </ul>
+                    </div> -->
+
+
+            <div id="box1">
+                <img src="img/user.png" alt="user" id="user">
+                <img src="img/별점.PNG" alt="starreview" id="starview">
+                <p>2021/12/21 </p>
+
+                <h2>여기는 슬라임 천국?</h2>
+                <span>우리 아이들은 슬라임 어드벤처 달력을 좋아했다. 숫자와 고품질 슬라임을 뚫는 재미. 질감, 첨가물, 향이 훌륭했다.
+                    몇 개는 내가 선호하는 것보다 조금 더 끈적거렸지만, 우리는 여전히 즐겼다. 추천합니다!!</span>
+                <button id="like">도움이 되었어요. <img src="img/like.png" alt="like"> (6) </button>
+                <button id="like"> 신고하기<img src="img/alert.png" alt="alert"></button>
+            </div>
+
+
+            <div id="box1">
+                <img src="img/user.png" alt="user" id="user">
+                <img src="img/별점.PNG" alt="starreview" id="starview">
+                <p>2021/12/21 </p>
+
+                <h2>슬라임의 꿈은 실현됩니다!</h2>
+                <span>나는 이것을 크리스마스 선물로 내 10살짜리 딸을 위해 샀고 그것은 단연코 그녀가 가장 좋아하는 선물이었다!
+                    첫 번째로, 그 포장은 사랑스러웠습니다! 그녀는 주먹으로 모험을 헤쳐나가면서 웃고 웃었고,
+                    심지어 크리스마스 스퀴즈와 엑스트라도 좋아했어요!
+                    둘째, 슬라임, 세상에 슬라임!!! 10/10이 추천할 것이다!!! 여기에서 슬라임을 더 많이 구매할 거예요!!!</span>
+                <button id="like">도움이 되었어요. <img src="img/like.png" alt="like"></button>
+                <button id="like"> 신고하기<img src="img/alert.png" alt="alert"></button>
+            </div>
+
+            <div id="box1">
+                <img src="img/user.png" alt="user" id="user">
+                <img src="img/별점.PNG" alt="starreview" id="starview">
+                <p>2021/12/21 </p>
+
+                <h2>제품에 반했어요!</h2>
+                <span>나는 이 제품을 정말 좋아한다. 그것은 휴일에 너무 완벽하고 선물로도 완벽할 수 있다!!
+                    이것은 10/10 추천이고 그냥 너무 재미있어서 나는 사랑한다!! 💝
+                    앞으로도 좋은 제품 많이 만들어주길 바란다.사랑한다!! 💝사랑한다!! 💝사랑한다!! 💝사랑한다!! 💝사랑한다!! 💝</span>
+                <button id="like">도움이 되었어요. <img src="img/like.png" alt="like"></button>
+                <button id="like"> 신고하기<img src="img/alert.png" alt="alert"></button>
+            </div>
+
+            <div id="box1">
+                <img src="img/user.png" alt="user" id="user">
+                <img src="img/별점.PNG" alt="starreview" id="starview">
+                <p>2021/12/21 </p>
+
+                <h2>궁극의 크리스마스 슬라임</h2>
+                <span>저는 손녀딸에게 이것을 선물했고, 그녀는 하루 걸러 이것을 여는 것을 매우 즐기고 있습니다.
+                    왜냐하면 12개가 있고 크리스마스 12일 전까지 기다릴 수 없었기 때문입니다.
+                    그래서 그녀는 그것을 퍼뜨리고 있습니다.
+                    그들은 사랑스럽고, 놀라움은 훌륭하다. 그녀를 그렇게 행복하게 해줘서 정말 행복해요.</span>
+                <button id="like">도움이 되었어요. <img src="img/like.png" alt="like"></button>
+                <button id="like"> 신고하기<img src="img/alert.png" alt="alert"></button>
+            </div>
+
+            <div id="box1">
+                <img src="img/user.png" alt="user" id="user">
+                <img src="img/별점.PNG" alt="starreview" id="starview">
+                <p>2021/12/21 </p>
+
+                <h2>딸이 너무 좋아해요.</h2>
+                <span>그래.. 엄마로서 나는 슬라임을 좋아하지 않지만 내 딸은 좋아해!
+                    이것은 의심할 여지 없이 우리가 찾은 최고의 슬라임이었다!
+                    재미있고, 품질도 좋고, 냄새도 너무 좋아요!
+                    이 제품은 큰 성공을 거두었습니다! 강력 추천하며 다시 구매하겠습니다!</span>
+                <button id="like">도움이 되었어요. <img src="img/like.png" alt="like"></button>
+                <button id="like"> 신고하기<img src="img/alert.png" alt="alert"></button>
+            </div>
+
+            <div id="box1">
+                <img src="img/user.png" alt="user" id="user">
+                <img src="img/별점.PNG" alt="starreview" id="starview">
+                <p>2021/12/21 </p>
+
+                <h2>최고의 선물</h2>
+                <span>나는 이것을 깜짝 선물로 받았고 그것이 무엇인지 보았을 때 말 그대로
+                    너무 행복했다. 이 재림 달력은 모든 돈의 가치가 있고 매일 열어보고
+                    휴일을 깜짝 받는 것은 말 그대로 너무 재미있다. 나는 이것들 중 하나를
+                    사는 것을 강력히 추천한다, 나는 내 것을 정말로 너무 사랑한다 🥺
+                    슬라임과 다른 좋은 것들은 정말 질이 좋아, 나는 이것을 좋아하고
+                    누구에게나 추천하고 싶어!!! :)))</span>
+                <button id="like">도움이 되었어요. <img src="img/like.png" alt="like"></button>
+                <button id="like"> 신고하기<img src="img/alert.png" alt="alert"></button>
+           </div>
+
+           <div id="buttonkey">
+           <a href="#" class="mybutton"> << </a>
+           <a href="#" class="mybutton"> < </a> 1   2   3
+           <a href="#" class="mybutton"> > </a>
+           <a href="#" class="mybutton"> >> </a>
+            </div>
+
+
+            <form> 
+                <h4>NAME</h4>
+            <input type="textbox" value="이름을 입력해주세요." name="name">
+            <h4>EMAIL</h4>
+            <input type="email" value="이메일을 입력해주세요." name="name">
+            <h4>RATING</h4>
+            <label><input type="radio" value="별점" name="rating">매우 불만족</label>
+            <label><input type="radio" value="별점" name="rating">불만족</label>
+            <label><input type="radio" value="별점" name="rating">보통</label>
+            <label><input type="radio" value="별점" name="rating">만족</label>
+            <label><input type="radio" value="별점" name="rating">매우 만족</label>
+            <h4>TITLE</h4>
+            <input type="textbox" value="제목을 입력해주세요." name="name">
+            <h4>CONTENT</h4>
+            <input type="textbox" value="내용을 입력해주세요." name="name">
+            <h4>FILE</h4>
+            <input type="image" value="사진을 추가해주세요." name="name">
+
+            
+            <button id="bt"> 제출하기 </button>
+            <button id="bt"> 임시저장 </button>
+
+        </form>
+    
+            </div>
+
+
+        </div>
+
+
+
+        <div id="refund">
+            <img src="img/환불.png" alt="refund">
+        </div>
+
+        <div id="deliver">
+            <img src="img/배송.png" alt="deliver">
+        </div>
+
+
+        <div id="last">
+
+                <br>
+                <h1>함께하면 더 좋은 제품</h1>
+        
+                <ul>
+                    <li><img src="img/슬라임10.webp" alt=slime>
+                        <h1>캔디 쇼트 케이크</h1><br>
+                        <p> 3개 이상 구매시 30% 할인!</p>
+                        <button> ADD TO CART </button>
+                    </li>
+        
+                    <li><img src="img/슬라임15.webp" alt=slime>
+                        <h1>크리스탈 샌드</h1><br>
+                        <p> 3개 이상 구매시 30% 할인!</p>
+                        <button> ADD TO CART </button>
+                    </li>
+        
+                    <li><img src="img/슬라임12.webp" alt=slime>
+                        <h1>블루 하와이안</h1><br>
+                        <p> 3개 이상 구매시 30% 할인!</p>
+                        <button> ADD TO CART </button>
+                    </li>
+        
+                    <li><img src="img/슬라임13.webp" alt=slime>
+                        <h1>큐티 파이</h1><br>
+                        <p> 3개 이상 구매시 30% 할인!</p>
+                        <button> ADD TO CART </button>
+                    </li>
+        
+                </ul>
+            </div>
+        
+
+
+        <!-- footer -->
+
+        <div id="box7">
+
+            <div id="footer">
+                <ul>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Order</a></li>
+                </ul>
+
+
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Instargram</a></li>
+                    <li><a href="#">Tictok</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+
+                <ul>
+                    <li><strong>파이어플라이슬라임 코리아의 뉴스를 받아보세요!</strong></li>
+                    <li><input type="text" name="email" value="이메일을 입력해주세요.">
+                        <button>SUBSCRIBE</button>
+                    </li>
+                    <li>
+                        <h5>슬라임 놀이로 아이들과 즐거운 추억을 쌓아보세요.<br>
+                            개인정보동의에 관한 자세한 내용은 고객센터를 참고해주세요.</h5>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">쿠키정책</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+
+            <span>파이어플라이슬라임 코리아㈜ 서울특별시 중구 한강대로 416 서울 스퀘어 9층 (우) 04637
+                대표자 성명 : 토마스허버트클라인 사업자 등록번호: 220-86-000000 <br>
+
+                파이어플라이슬라임 코리아㈜는 통신판매중개자이고 통신판매의 당사자가 아니며, 상품, 상품정보, 거래에 관한
+                의무와 책임은 판매자에게 있습니다.</span>
+
+
+        </div>
+
+
+    </body>
+
+</html>
