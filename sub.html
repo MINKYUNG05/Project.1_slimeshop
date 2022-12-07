@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruity Loops | FIREFLY SLIME KOREA</title>
     <link rel="stylesheet" href="1.css/common.css">
     <link rel="stylesheet" href="1.css/sub.css">
 
@@ -14,6 +14,9 @@
     <script>
         $(function () {
             $('.product1').click(function () {
+                $('#nav ul li').removeClass("active");
+                $(this).addClass("active");
+                
                 $("#pro").fadeIn();
                 $("#review").hide();
                 $("#refund").hide();
@@ -23,6 +26,9 @@
 
 
             $('.buy').click(function () {
+                $('#nav ul li').removeClass("active");
+                $(this).addClass("active");
+                
                 $("#review").fadeIn();
                 $("#pro").hide();
                 $("#refund").hide();
@@ -31,6 +37,8 @@
             });
 
             $('.refund').click(function () {
+                $('#nav ul li').removeClass("active");
+                $(this).addClass("active");                
                 $("#pro").hide();
                 $("#review").hide();
                 $("#refund").fadeIn();
@@ -39,6 +47,8 @@
             });
 
             $('.delivery').click(function () {
+                $('#nav ul li').removeClass("active");
+                $(this).addClass("active");
                 $("#pro").hide();
                 $("#review").hide();
                 $("#refund").hide();
@@ -57,18 +67,18 @@
     <body style="overflow-x: hidden">
         <div id="box0">
             <div id="colorbar"></div>
-            <div id="logo"><img src="img/슬라임로고.png" alt="slime"></div>
+            <div id="logo"><a href="index.html"><img src="img/슬라임로고.png" alt="slime"></a></div>
 
             <div id="login">
                 <ul>
-                    <li><a href="#"><img src="img/아이콘_돋보기.png" alt="glass"></a></li>
-                    <li><a href="#"><img src="img/아이콘_유저.png" alt="user"></a></li>
-                    <li><a href="#"><img src="img/아이콘_가방.png" alt="bag"></a></li>
+                    <li><a href="index.html"><img src="img/아이콘_돋보기.png" alt="glass"></a></li>
+                    <li><a href="login.html"><img src="img/아이콘_유저.png" alt="user"></a></li>
+                    <li><a href="index.html"><img src="img/아이콘_가방.png" alt="bag"></a></li>
                 </ul>
 
                 <div id="register">
-                    <a href="#"> Sign in </a>/
-                    <a href="#">Register </a>
+                    <a href="login.html"> Sign in </a>/
+                    <a href="login.html">Register </a>
                 </div>
             </div>
 
@@ -77,11 +87,11 @@
 
         <div id="menu">
             <ul>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Guide</a></li>
+                <li><a href="sub.html">Shop</a></li>
+                <li><a href="sub.html">About Us</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="index.html">Help</a></li>
+                <li><a href="index.html">Guide</a></li>
             </ul>
         </div>
 
@@ -110,15 +120,15 @@
 
         <div id="nav">
             <ul>
-                <li class="product1"><a href="#">제품정보</a></li>
-                <li class="buy"><a href="#">구매후기</a></li>
-                <li class="refund"><a href="#">환불정책</a></li>
-                <li class="delivery"><a href="#">배송안내</a></li>
+                <li class="product1 active">제품정보</li>
+                <li class="buy">구매후기</li>
+                <li class="refund">환불정책</li>
+                <li class="delivery">배송안내</li>
             </ul>
 
         </div>
         <div id="pro">
-            <img src="img/슬라임설명.png" alt="explain">
+            <img src="img/슬라임설명2.png" alt="explain">
             <video src="video/슬라임소개.mp4" alt="video" loop auto controls></video>
         </div>
 
@@ -138,6 +148,12 @@
                     <li><img src="img/next.png" alt="arrow" id="next2"></li>
                     </ul>
                     </div> -->
+
+                    <div id="search">
+                        <h2>CUSTOMERS REVIEWS</h2>
+                        <input type="textbox" value="후기를 검색하세요!" name="review">
+                        <input type="button" value="검색" onclick="alert('검색어를 정확히 입력해주시기 바랍니다.')">
+                    </div>
 
 
             <div id="box1">
@@ -278,6 +294,7 @@
                 <h1>함께하면 더 좋은 제품</h1>
         
                 <ul>
+
                     <li><img src="img/슬라임10.webp" alt=slime>
                         <h1>캔디 쇼트 케이크</h1><br>
                         <p> 3개 이상 구매시 30% 할인!</p>
@@ -330,7 +347,7 @@
                 <ul>
                     <li><a href="#">Youtube</a></li>
                     <li><a href="#">Instargram</a></li>
-                    <li><a href="#">Tictok</a></li>
+                    <li><a href="#">Tiktok</a></li>
                     <li><a href="#">Facebook</a></li>
                 </ul>
 

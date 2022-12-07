@@ -45,16 +45,19 @@ ul,ol,li{list-style:none; margin:0; padding:0; text-decoration:none;}
 #product hr{ margin: 10px 0; border: 5px solid rgb(51, 44, 100);}
 
 #nav{background-color:white; font-weight:bolder; font-size:100%; text-align:center; 
-    margin: 0 auto; width: 880px; height: 100px;}
-#nav ul li{float:left; margin: 0 auto; text-align:center; margin:10px 45px; 
-    padding: 20px 30px; text-decoration:none; }
+    margin: 0 auto; width: 856px; height: 100px;}
+#nav ul li{float:left; margin: 0 auto; text-align:center; 
+    padding: 30px 75px; text-decoration:none; cursor:pointer;}
+
+#nav ul li.active, #nav ul li:hover{background-color:rgb(50, 43, 97);
+                                    color:white;} 
 
     a:link{text-decoration:none;}
-    a:active{text-decoration:none;}
+    a:active{text-decoration:none; }
     a:visited{text-decoration:none;}
     a:hover{text-decoration:none;}
 
-#nav ul{border-bottom: 3px solid black; margin: 0 auto; }
+#nav ul{border-bottom: 10px solid rgb(50, 43, 97); margin: 0 auto; }
 
 
 /* 제품안내 */
@@ -69,9 +72,17 @@ ul,ol,li{list-style:none; margin:0; padding:0; text-decoration:none;}
 
 /* 제품후기 */
 
-#review{width: 800px; height: 2100px; border: 1px solid gray; 
+#review{width: 800px; height: 2100px;/*  border: 1px solid gray;  */
     margin:0 auto; text-align:left; padding: 20px 20px; display:flex; flex-wrap: wrap;
 justify-content: center; display:none;}
+
+#search{width: 800px; height:auto; margin:0 auto; text-align:center;display:flex; flex-wrap: wrap;
+    justify-content: flex-end; }
+
+    #search :nth-child(1){font-size:20px; font-weight: bolder; text-align:left; margin-right:190px;}
+    #search :nth-child(2){padding: 5px 70px; border: 1px solid gray;}
+    #search :nth-child(3){padding: 5px 20px; border: 1px solid gray; background-color:lightgray;
+                    margin:0 20px 0 0;}
     
     #box1{width: 750px; height:200px; /* border:1px solid gray; */ background-color:white;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
@@ -114,7 +125,7 @@ justify-content: center; display:none;}
                     border: 1px solid lightgrey; color:gray; font-weight: bolder;}
 #review form{ width: 750px; height: 400px; margin: 0 auto; margin-left:50px;}
 #review h4{margin: 5px 0;}
-#review button:hover{background-color:rgb(172, 172, 172);}
+#review button:hover{background-color:rgb(255, 255, 255); color:black;}
 
 #star{width:90px; height: 10px;}
 #review form:nth-child(6){width: 90px; height:10px;}
@@ -150,18 +161,18 @@ justify-content: center; display:none;}
 
 /* 환불 */
 
-#refund{width: 800px; height: 1200px; border: 1px solid gray; margin:0 auto; 
+#refund{width: 800px; height: 900px; /* border: 1px solid gray; */ margin:0 auto; 
     text-align:center; display:none;}
 
 
 /* 배송 */
-#deliver{width: 800px; height: 1200px; border: 1px solid gray; margin:0 auto; 
+#deliver{width: 800px; height: 1000px;/*  border: 1px solid gray; */ margin:0 auto; 
     text-align:center; display:none;}
 
 
 /* 함께하면 더 좋은 제품 */
 
-#last{width: 1050px; height: 500px; border: 1px solid gray; margin:0 auto; 
+#last{width: 1050px; height: 500px; /* border: 1px solid gray; */ margin:0 auto; 
     text-align:center;}
 
     #last ul{margin:10px 20px; margin-left: 75px; list-style-type: none;}
